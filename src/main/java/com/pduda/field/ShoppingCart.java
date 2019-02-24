@@ -19,11 +19,11 @@ public class ShoppingCart {
     }
 
     public boolean hasDiscount() {
-        boolean flag = false;
+        boolean isMoreThanOneHundred = false;
        for (int price: price)
             if (price>= 100)
-               flag = true;
-        return flag;
+                isMoreThanOneHundred = true;
+        return isMoreThanOneHundred;
 
     }
 
